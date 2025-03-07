@@ -134,6 +134,65 @@
  .bbh{
     background-color: #cec2af;
  }
+ /* General Styles (for larger screens) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Example of Flexbox for the layout */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .col {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .col {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
   
   
 
