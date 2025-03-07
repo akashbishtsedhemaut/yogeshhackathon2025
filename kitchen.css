@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Background Image */
+body {
+  background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Top Section Styling */
+.top {
+  font-family: "Great Vibes", cursive;
+  background: linear-gradient(180deg, rgba(48, 33, 18, 0.9) 0%, rgba(155, 136, 113, 0.9) 100%);
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.top img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.top span {
+  color: white;
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Order Card Styling */
+.order-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.order-card p {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.order-card button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-card button.preparing {
+  background-color: #fbbf24;
+  color: white;
+}
+
+.order-card button.ready {
+  background-color: #10b981;
+  color: white;
+}
+
+.order-card button:hover {
+  opacity: 0.9;
+}
+
+/* Toast Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#toast {
+  animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s;
+}

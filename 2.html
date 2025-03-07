@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Food Ordering System</title>
+  <link rel="stylesheet" href="2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+  </script>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <h1>Welcome </h1>
+      <p>Please log in to order</p>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <select id="role" required>
+          <option value="" disabled selected>Select Role</option>
+          <option value="customer">Customer</option>
+          <option value="kitchen_staff">Kitchen Staff</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button type="submit" onclick={addUser()} ><a href="user.html" style="color: white; text-decoration: none;">Login</a></button>
+      </form>
+      <p id="error-message" class="error"></p>
+    </div>
+  </div>
+  <script>
+    // Firebase configuration
+    const firebaseConfig = {
+    apiKey: "AIzaSyBIMqSh2dK1V3yXUJPvbpaSCtDWgaBpSvs",
+    authDomain: "cafebytecafe.firebaseapp.com",
+    projectId: "cafebytecafe",
+    storageBucket: "cafebytecafe.firebasestorage.app",
+    messagingSenderId: "948474407695",
+    appId: "1:948474407695:web:ed5ad4c27eb0e50154ec7a",
+    measurementId: "G-84XN4Z8X9F"
+    };
+  
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>
+  <script src="https://www.gstaticcom/firebasejs/10.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js"></script>
+  <script src="2.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js"></script>
+
+</body>
+</html>

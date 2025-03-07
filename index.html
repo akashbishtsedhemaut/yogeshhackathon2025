@@ -1,0 +1,196 @@
+<!-- filepath: c:\Users\User\Desktop\ALLL\cafe2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betheme's Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            color: #333;
+        }
+        
+        /* Navigation Bar */
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        
+        nav ul li {
+            display: inline;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: goldenrod;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 22px;
+            padding: 0 20px;
+            color: goldenrod;
+        }
+        
+        .buy-now {
+            color: goldenrod;
+            font-weight: bold;
+            border: 1px solid goldenrod;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        .buy-now:hover {
+            background-color: goldenrod;
+            color: white;
+        }
+        
+        /* Banner Section */
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background: url("becafe1.jpg") no-repeat center center/cover;
+            
+        }
+        
+        /* Mobile menu toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Responsive Styles */
+        @media screen and (max-width: 992px) {
+            nav ul li a {
+                font-size: 16px;
+            }
+            
+            nav ul {
+                gap: 15px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+            
+            nav {
+                flex-direction: column;
+                padding: 15px 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s ease;
+            }
+            
+            nav ul.active {
+                max-height: 500px;
+            }
+            
+            nav ul li {
+                width: 100%;
+                padding: 15px 0;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .logo {
+                padding: 10px 0;
+                margin-bottom: 10px;
+            }
+            
+            .banner {
+                height: 60vh;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .banner {
+                height: 50vh;
+            }
+            
+            nav ul li a {
+                font-size: 14px;
+            }
+            
+            .logo {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Gallery</a></li>
+                <li class="logo">Quick Bite</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="2.html">Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="banner"></section>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

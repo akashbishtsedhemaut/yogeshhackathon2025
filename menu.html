@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>menu</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS for animations -->
+  <link rel="stylesheet" href="user.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+</head>
+
+<body class="bg-gray-100" style="background:  linear-gradient(90deg,  rgba(29, 15, 4, 0.514)0%, rgb(55, 19, 3) 35%, rgb(123, 100, 91) 100%);">
+  <div class="container mx-auto p-6">
+    <div class="bg-none rounded-lg shadow-lg p-6">
+        <div class="text-center" id="welcome-section" style="height: 10%; display: flex; align-items: center; justify-content: center;padding: auto; margin: auto;">
+            <span class="text-3xl font-bold text-600" style="color: white; background: none;padding: 20px 20px 20px 20px; border-top: none;">Welcome, User!</span>
+        </div>
+      <!-- Search and Filter -->
+      <div class="mb-6">
+        <input type="text" id="search" placeholder="Search some Delicious😋" class="w-full p-2 border border-gray-300 rounded-lg">
+      </div>
+
+      
+    <!-- Menu -->
+    <div class="mb-6">
+    <h2 class="text-2xl font-semibold text-800 mb-4" style="color: white;"><div class="fast"></div><i class="fas fa-utensils align-items-center"></i> Fast Food</div></h2>
+    <div id="fastfood-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Fast Food items will be added here dynamically -->
+    </div>
+    </div>
+  
+    <!-- Beverage Section -->
+    <div class="mb-6">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4" style="color: white;"><i class="fas fa-glass-cheers"></i> Beverages</h2>
+    <div id="beverage-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Beverage items will be added here dynamically -->
+    </div>
+    </div>
+  <!-- Toast Notification Container -->
+  <div id="toast" class="hidden fixed bottom-4 right-4 bg-green-600 text-white p-4 rounded-lg shadow-lg">
+    <span id="toast-message"></span>
+  </div></div>
+
+</body>
+</html>

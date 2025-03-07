@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* Toast Animation */
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  #toast {
+    animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s;
+  }
+  
+  /* Menu Item Hover Effect */
+  .menu-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Food Image Styling */
+  .food-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  /* Highlight the total price */
+.font-bold {
+    font-weight: bold;
+    background-color: #e9ecef;
+    border-top: 2px solid #28a745;
+  }
+.top{
+    font-family:"Great Vibes", cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Toast Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#toast {
+  animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s;
+}
+
+/* Menu Item Hover Effect */
+.menu-item:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* Food Image Styling */
+.food-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Highlight the total price */
+.font-bold {
+  font-weight: bold;
+  background-color: #e9ecef;
+  border-top: 2px solid #28a745;
+}
+
+/* Category Heading Styling */
+.category h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #28a745;
+  color: #2d3748; /* Dark gray color */
+  font-size: 1.5rem; /* Larger font size for headings */
+}
+
+/* Top Section Styling */
+.top {
+  font-family: "Great Vibes", cursive;
+  background: linear-gradient(180deg, rgb(49, 29, 10) 0%, rgb(230, 126, 0) 100%);
+  text-align: center;
+  padding: 1rem;
+}
+
+.top img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.top span {
+  color: white;
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+/* Dynamic background container */
+#background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays behind other content */
+    transition: background 0.5s ease; /* Smooth transition for background changes */
+  }
+ .bbh{
+    background-color: #cec2af;
+ }
+  
+  
+
+
+
+
+
+
+
